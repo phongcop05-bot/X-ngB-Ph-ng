@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng ký nhận ưu đãi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>ĐĂNG KÝ NHẬN ƯU ĐÃI</h2>
+        <p class="subtitle">Đăng ký thẻ thành viên Món Nghệ</p>
+
+        <form id="registerForm" novalidate>
+
+            <div class="form-group">
+                <label for="hoten">Họ tên:</label>
+                <input type="text" id="hoten" placeholder="Nhập họ tên">
+                <small id="errorHoten"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Nhập email">
+                <small id="errorEmail"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="sdt">Số điện thoại:</label>
+                <input type="text" id="sdt" placeholder="Nhập số điện thoại">
+                <small id="errorSdt"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="soKhach">Số khách thường đi cùng:</label>
+                <input type="number" id="soKhach" placeholder="Nhập số khách">
+                <small id="errorSoKhach"></small>
+            </div>
+
+            <button type="submit">GỬI ĐĂNG KÝ</button>
+        </form>
+
+        <div id="successMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
